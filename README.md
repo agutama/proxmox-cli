@@ -20,6 +20,7 @@ qemu-img resize jammy-server-cloudimg-amd64.img 16G
 - Customize image
 ```
 sudo virt-customize -a jammy-server-cloudimg-amd64.img --install qemu-guest-agent --truncate /etc/machine-id
+sudo virt-customize -a centos7.qcow2 --root-password password:centos --truncate /etc/machine-id
 ```
 
 - Create vm
