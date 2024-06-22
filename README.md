@@ -46,8 +46,8 @@ sudo qm set 1000 --ipconfig0 ip=dhcp
 - Prepare cloudinit
 ```
 sudo qm set 1000 --ide2 local:cloudinit
-sudo qm set 1000 -ciuser aguswibawa
-sudo qm set 1000 -cipassword P@ssw0rd
+sudo qm set 1000 -ciuser ubuntu
+sudo qm set 1000 -cipassword ubuntu
 sudo qm set 1000 --sshkeys ~/.ssh/id_rsa.pub
 sudo qm set 1000 --ciupgrade 0
 ```
